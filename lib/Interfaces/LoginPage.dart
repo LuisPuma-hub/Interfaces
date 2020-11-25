@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:interfaces/my_flutter_app_icons.dart';
+import 'package:interfaces/Interfaces/register_page.dart';
 
 class Login extends StatefulWidget {
   Login({Key key}) : super(key: key);
@@ -98,7 +99,7 @@ class _LoginState extends State<Login> {
                               ),
                             ),
                             RaisedButton(
-                              color: Colors.blue,
+                              color: Colors.deepOrange,
                               padding: const EdgeInsets.symmetric(vertical: 15,horizontal: 25),
                               textColor: Colors.white,
                               onPressed: (){},
@@ -122,9 +123,9 @@ class _LoginState extends State<Login> {
                               textColor: Theme.of(context).primaryColor,
                               child: Text("Registrate"),
                               onPressed: (){
-                                Navigator.of(context).pushNamed(
-                                  '/register',
-                                );
+                                Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => RegisterPage(),
+                                ));
                               },
                             )
                           ],

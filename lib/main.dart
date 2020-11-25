@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:interfaces/Interfaces/Create_Recipe.dart';
+import 'package:interfaces/opciones.dart';
 
-import 'package:interfaces/Interfaces/LoginPage.dart';
-import 'package:interfaces/my_flutter_app_icons.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(
@@ -11,7 +11,7 @@ void main() => runApp(MaterialApp(
       ),
       initialRoute: '/home',
       routes: {
-        '/home': (context) => Login(),
+        '/home': (context) => opciones(),
       }
     )
   )
